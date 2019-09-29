@@ -29,6 +29,15 @@ int main() {
 				- essayer de deviner le nombre mystère à l'aide d'un function
 				- Si le nombre mystre est trouvé il faut passer à l'état END
 			*/
+			//Not sure what the instruction mean, the user must find the number or the program itself must find it?
+			int userGuess;
+			int tries 0;
+			bool numberFound = false;
+			while (!numberFound) {
+				std::cout << "Try to find the mystery number ! " << endl;
+				cin >> userGuess;
+				tries++;
+				gameState = GameState::END;
 			break;
 
 		case GameState::END:
