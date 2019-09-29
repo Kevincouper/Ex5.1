@@ -41,9 +41,7 @@ int main() {
 			break;
 
 		case GameState::END:
-			/*
-				Cette partie doit afficher le nombre de coups qui ont été nécessaire pour trouver le nombre mystère et indiquer quel est ce nombre mystère
-			*/
+			std::cout << "You took " << tries << " turn to find the mystery number, that is : " << mysteryNumber;
 			break;
 
 		case GameState::EXIT:
