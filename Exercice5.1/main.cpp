@@ -20,12 +20,9 @@ int main() {
 	{
 		switch (gameState) {
 		case GameState::INIT:
-			/*
-				Cette partie doit donner une valeur à mysterNumber comprise entre 0 et 100
-			*/
+			srand(static_cast<unsigned int>(time(0)));
+			mysteryNumber = rand() % 101;
 			gameState = GameState::PLAY;
-			break;
-
 		case GameState::PLAY:
 			/*
 				Cette partie doit:
